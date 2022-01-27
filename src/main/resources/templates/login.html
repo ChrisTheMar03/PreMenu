@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link th:href="@{estilos.css}" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+        <div class="img-container">
+            <img class="imgLogin" id="imgLogin" src="img/book.png" alt="book">
+        </div>
+        
+        <div class="login">
+            <div class="loginUser" id="formulario">
+                <div class="titulo">
+                    <h2>LOGIN</h2>
+                </div>
+                <div class="frase">
+                    <p>Lo mejor de la lectura al alcance de tus manos</p>
+                </div>
+                <div class="formulario-container">
+                    <form class="formulario" th:action="@{/login}" method="post">
+                        <div class="layout-correo">
+                            <label for="correo">Correo</label>
+                            <input type="email" name="correo" id="correo" required>
+                        </div>
+                        <div class="layout-pass">
+                            <label for="clave">Contraseña</label>
+                            <input type="password" name="clave" id="clave" required>
+                        </div>
+                        <div class="boton">
+                            <button class="btnIngresar" type="submit">Ingresar</button>
+                        </div>  
+                    </form>
+
+                </div>
+                <div class="redirigir">
+                    <a id="cambio" href="#">Registrece Aqui</a>
+                </div>
+            </div>
+            
+            <div class="registro ocultar" id="registro">
+                <div class="title-register">
+                    <h3 class="tt-registro">Registro</h3>
+                </div>
+
+                <form class="r-formulario" id="formRegistro" th:action="@{/registro}" method="post">
+                    
+                    <div class="credencial-na">
+                        <div class="r-nombre">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" required>
+                            <span id="error" class="error"></span>
+                        </div>
+                        <div class="r-apellido">
+                            <label for="apellidos">Apellido</label>
+                            <input type="text" name="apellidos" id="apellidos" required>
+                            <span id="error" class="error"></span>
+                        </div>
+                    </div>
+                    <div class="credencial-dni">
+                        <div class="r-dni">
+                            <label for="dni">DNI</label>
+                            <input type="text" name="dni" id="dni" maxlength="8" minlength="7" required>
+                            <span id="error" class="error"></span>
+                        </div>
+                    </div>
+                    <div class="credencial-cc">
+                        <div class="r-correo">
+                            <label for="correo">Correo</label>
+                            <input type="email" name="correo" id="correo" required>
+                            <span id="error" class="error"></span>
+                        </div>
+                        <div class="r-clave">
+                            <label for="clave">Constraseña</label>
+                            <input type="password" name="clave" id="clave" required>
+                            <span id="error" class="error"></span>
+                        </div>
+                    </div>
+                    <div class="credencial-t">
+                        <div class="r-fono">
+                            <label for="telefono">Telefono</label>
+                            <input type="number" name="telefono" id="telefono" required>
+                            <span id="error" class="error"></span>
+                        </div>
+                    </div>
+
+                    <div class="layout-btn">
+                        <a class="volver" href="#" id="volver">Volver</a>
+                        <button type="submit" id="btnReg" class="btnRegistrar">Registrar</button>
+                    </div>
+                </form>
+                
+
+            </div>
+
+        </div>
+    </div>
+
+
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>

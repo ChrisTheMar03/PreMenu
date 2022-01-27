@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #333;
+}
+.container{
+    background-color: white;
+    width: 800px;
+    height: 450px;
+    /*background-color: aquamarine;*/
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 5px 15px 2px;
+}
+.img-container{
+    height: 100%;
+    width: 50%;
+    background-color: lightcoral;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    
+}
+
+.login{
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    /*background-color: lightgreen;*/
+}
+
+.loginUser{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.imgLogin{
+    width: 350px;
+    margin-top: 50px;
+}
+
+/** Login*/
+
+.titulo,.frase{
+    /*background-color: lightslategray;*/
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+    text-align: center;
+    color: #333;
+}
+h2{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+p{
+    margin: 0px 60px;
+    padding: 5px 0px;
+}
+
+.formulario-container{
+    height: auto;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+.layout-correo,.layout-pass{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+    margin: 15px 0px;
+}
+
+label{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+input{
+    padding: 10px;
+    border: 0px;
+    border-bottom:1px solid black;
+    outline: none;
+}
+input:active{
+    border: 0px;
+}
+
+.boton{
+    /*background-color: chocolate;*/
+    margin: 0;
+    height: auto;
+    padding: 5px;
+    float: right;
+    text-align: center;
+}
+.btnIngresar{
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin-left: 170px;
+    color: wheat;
+    border: 0px;
+    background: linear-gradient(90deg,lightcoral 0%,rgb(206, 45, 228) 100%);
+    cursor: pointer;
+    transition: 1s infinite ease;
+}
+.redirigir{
+    /*background-color: blueviolet;*/
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.btnIngresar:hover{
+    background: linear-gradient(90deg,rgb(235, 140, 16)0%,rgb(204, 67, 223) 100%);
+}
+
+.ocultar{
+    display: none;
+}
+.mostrar{
+    display: block;
+}
+
+/**Registro*/
+.error{
+    color: rgb(255, 25, 25);
+}
+
+.registro{
+    height: 100%;
+    width: 100%;
+}
+
+.registro{
+    overflow: hidden;
+}
+
+.title-register{
+    text-align: center;
+    /*background-color: red;*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 16px;
+}
+.tt-registro{
+    margin: 0;
+    color: #333;
+}
+
+.r-formulario{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.r-formulario>div{
+    margin-bottom: 16px;
+}
+
+.credencial-na,.credencial-cc{
+    display: flex;
+}
+
+
+.r-nombre>input,.r-correo>input,.r-clave>input{
+    width: 150px;
+}
+.r-apellido>input{
+    width: 150px;
+}
+
+.r-dni,.r-fono{
+    display: flex;
+    flex-direction: column;
+}
+.r-dni>input{
+    margin: 0;
+    width: 150px;
+}
+.r-correo{
+    margin-right: 16px;
+}
+
+.layout-btn{
+    margin-top:16px;
+    /*background-color: aqua;*/
+    text-align: end;
+}
+
+.volver{
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.btnRegistrar{
+    padding: 8px 15px;
+}
+
+@media only screen and (max-width:800px){
+    .img-container{
+        display: none;
+    }
+    .container{
+        width: 400px;
+    }
+    .login{
+        width: 100%;
+    }
+}
+
+

@@ -1,0 +1,282 @@
+body{
+    background-color: lightcoral;
+    box-sizing: border-box;
+    background-color: #edeef6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+
+.modal-container{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.show{
+    pointer-events: auto;
+    display:flex;
+}
+
+.modal{
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal h1{
+    margin: 0;
+
+}
+
+.modal p{
+    opacity: .7;
+    font-size: 14px;
+}
+
+
+/** header */
+.header{
+    background-color: lightgreen;
+    width: 100%;
+    height: auto;
+}
+.apartado{
+    background-color: lightcoral;
+    font-weight: bold;
+}
+.apartado-prestamo{
+    /* background-color: aqua; */
+    display: inline-block;
+}
+.data-prestamo{
+    margin: 0;
+    opacity: 0.5;
+    padding: 5px 15px;
+    display: inline-block;
+}
+.header-lbe{
+    background-color: rgb(252, 88, 88);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.logo{
+    width:20rem;
+    /* background-color: aqua; */
+    text-align: center;
+    margin: auto;
+}
+.logo-img{
+    width: 90px;
+}
+.buscador{
+    width: 40rem;
+    /* background-color: red; */
+    margin: auto;
+    text-align: center;
+}
+.buscador-text{
+    padding: 10px 10px;
+    width: 450px;
+    border: 0;
+    border-radius: 5px;
+}
+.extras{
+    /* background-color: blue; */
+    width:20rem;
+    text-align: center;
+    margin: auto;
+}
+.telefono{
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+    opacity: .8;
+}
+.buscar{
+    padding: 5px 10px;
+}
+.nav{
+    background-color: rgb(252, 88, 88);
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+li{
+    margin: 0;
+    padding: 10px 5px ;
+    margin-left: 10px;
+}
+
+li:hover a{
+    color: #333;
+    cursor: default;
+}
+.data{
+    text-decoration: none;
+    color: black;
+}
+/** Slider*/
+.slider-container {
+  background-color: rgba(202, 202, 202, 0.3); 
+  width: 100%;
+  margin: 20px 0px;
+  padding: 15px 0px;
+}
+
+.slider {
+  background-color: rgb(196, 139, 241); 
+  width: 700px;
+  height: 300px;
+  margin: 10px 0px;
+  margin: 0px auto;
+  box-shadow: 0px 1px 10px;
+}
+
+/** Carrusel*/
+.container-carrusel{
+    /*background-color: lightseagreen;*/
+    width: 100%;
+    height: auto;
+}
+.categoria-titulo-slider{
+    background-color: lightsalmon;
+    display: inline-block;
+}
+.text-categoria{
+    margin: 0;
+    padding: 15px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: .7;
+}
+
+.carousel{
+    width: 100%;
+}
+
+.carousel h2{
+    font-size: 26px;
+    line-height: 38px;
+    color:rgb(252, 88, 88);
+    padding-bottom: 24px;
+    opacity: .9;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: left;
+    margin: 0 0 0 24px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.slick-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 384px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.slick{
+    position: relative;
+    width: 275px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+
+.slick h4{
+    position: absolute;
+    z-index: 1;
+    font-size: 18px;
+    line-height: 23px;
+    color: #fff;
+    padding: 15px;
+}
+
+.slick h4 small{
+    font-size: 12px;
+    display: block;
+}
+
+.slick a img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+    transition: .3s ease-in-out;
+}
+
+.slick a img:hover{
+    opacity: .85;
+}
+
+/** Botones  */
+
+.slick-arrow{
+    border-radius: 30px;
+    background: #fff;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 15);
+    border: 0;
+    cursor: pointer;
+}
+
+.slick-arrow{
+    outline: 0;
+}
+
+.slick-arrow svg{
+    width: 12px;
+    height: 100%;
+    color: rgba(0, 0, 0, .7);
+}
+
+.slick-prev{
+    left: 0px;
+}
+.slick-next{
+    right: 0px;
+}
+
+
